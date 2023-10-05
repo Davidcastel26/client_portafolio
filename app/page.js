@@ -15,6 +15,9 @@ export default function Home() {
         <AboutSection />
         <ProjectSection />
       </div>
+      <footer className='text-center p-3'>
+        <h3>Still building ...</h3>
+      </footer>
     </main>
   )
 }

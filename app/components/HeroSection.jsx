@@ -29,7 +29,7 @@ export const HeroSection = () => {
                 />
             </h1>
             <p className="text-[#ADB7BE] text-base sm:text-lg mb-6 lg:text-xl ">
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maiores earum modi, voluptate, quidem pariatur blanditiis debitis atque quasi a dolorum nesciunt maxime. Soluta mollitia eius magnam. Fugit officia maxime exercitationem.
+                I am a dev with a passion for solving problems and building efficient solutions through code. Since I started learning programming, I just realized how terrific is work with logic and the ability from anyone to create something from scratch.
             </p>
             <div className="">
                 <button className="btn px-6 py-3 w-full sm:w-fit rounded-full mr-4 bg-gradient-to-br from-[#12486B] via-[#419197] to-[#78D6C6] hover:bg-[#0F2C59] text-white">
@@ -45,7 +45,7 @@ export const HeroSection = () => {
         <div className="col-span-5 place-self-center mt-4 lg:mt-0">
             <div className="rounded-full bg-[#181818] w-[400px] h-[400px] relative">
                 <Image 
-                    src='/images/hero2.png'
+                    src='/images/hero5.jpeg'
                     alt="hero image"
                     className="absolute transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
                     width={300}

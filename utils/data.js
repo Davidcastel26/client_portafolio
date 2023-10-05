@@ -35,3 +35,33 @@ export const personSkills = [
         info:['BUSCO Freelancer/Startup','Login Solution Intership/Pasantilla']
     },
 ]
+
+export const projectsInfo = [
+    {
+        id: 1,
+        title: 'backroad proyect cst',
+        description: 'This proyect is made with react js',
+        image:"/images/projects/1.png",
+        tag: ["All", "WEB"],
+        link:'https://backroad-apps.netlify.app',
+        codeLink: 'https://github.com/Davidcastel26/Backroads-Project'
+    },
+    {
+        id: 2,
+        title: 'our menu react cst',
+        description: 'This proyect is made with react js',
+        image:"/images/projects/2.png",
+        tag: ["All", "WEB"],
+        link:'https://our-menu-react-dc.netlify.app/',
+        codeLink:'https://github.com/Davidcastel26/our-menu-react'
+    },
+    {
+        id: 3,
+        title: 'Slider starter cst',
+        description: 'This proyect is made with react js',
+        image:"/images/projects/3.png",
+        tag: ["All", "WEB"],
+        link:'https://slider-starter-cast.netlify.app/',
+        codeLink:'https://github.com/Davidcastel26/slider-starter-react'
+    },
+]

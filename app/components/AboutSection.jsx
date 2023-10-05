@@ -23,7 +23,7 @@ export const AboutSection = () => {
             className="md:grid md:grid-cols-2 gap-8 items-center py-8 px-4 xl:gap-16 sm:py-16 xl:px-16"
         >
             <Image
-             src="/images/hero4.png"
+             src="/images/about.jpeg"
              width={500}
              height={400}
              alt='img'
@@ -33,7 +33,7 @@ export const AboutSection = () => {
                     About Me
                 </h2>
                 <p className="text-base lg:text-lg">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, facere sequi similique in vero mollitia. Dolores vero error qui fugiat harum consectetur aliquid laboriosam deserunt neque culpa eum, assumenda quibusdam!
+                    I like to experiment with new languages and technologies, and participate in personal projects that allow me to continue learning and improving my skills. I am excited to continue my career as a dev and work on challenging projects.
                 </p>
                 <div className="flex flex-row mt-8">
                     {
