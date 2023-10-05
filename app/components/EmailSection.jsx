@@ -1,9 +1,46 @@
+'use client'
 import Link from 'next/link'
 import GitHubIcon from '../../public/icons/github1.svg'
 import LinkedInIcon from '../../public/icons/linkedin.svg'
 import Image from 'next/image'
+import { useState } from 'react'
 
 export const EmailSection = () => {
+
+    const [emailSubmitted, setEmailSubmitted] = useState(false)
+
+    const handleSubmit = async (event) => {
+
+        event.preventDefault();
+        
+        const data = {
+            email: event.target.email.value,
+            subject: event.target.subject.value,
+            message: event.target.message.value
+        }
+        
+        const JSONdata = JSON.stringify(data);
+
+        const endpoint = "/api/send"
+
+        const options = {
+            method:'POST',
+            headers:{
+                'Content-Type':'application/json',
+            },
+            body: JSONdata
+        }
+
+        const response = await fetch(endpoint, options);
+        const resData = await response.json()
+        console.log(resData)
+
+        if(response.status === 200){
+            console.log('Message sent.');
+            setEmailSubmitted(true)
+        }
+    }
+
   return (
     <section className="grid md:grid-cols-2 md:my-12 py-24 gap-4 relative">
         <div className="bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-[#78D6C6] to-transparent rounded-full h-80 w-80 z-0 blur-lg absolute top-3/4 -left-4 transform -translate-x-1/2 -translate-1/2"></div>
@@ -28,13 +65,14 @@ export const EmailSection = () => {
             </div>
         </div>
         <div className="">
-            <form action="" className='flex flex-col'>
+            <form action="" className='flex flex-col' onSubmit={handleSubmit}>
                 <div className="mb-6">
                 <label htmlFor="email" type='email' className='text-white block mb-2 text-sm font-medium'>
                     Your email
                 </label>
                 <input 
                     type="email" 
+                    name="email"
                     className='bg-[#18191E] border border-[#33353F] placeholder-[#9CA2A9] text-gray-100 text-sm rounded-lg block w-full p-2.5'
                     id='email' 
                     required 
@@ -47,6 +85,7 @@ export const EmailSection = () => {
                 </label>
                 <input 
                     type="text" 
+                    name='subject'
                     className='bg-[#18191E] border border-[#33353F] placeholder-[#9CA2A9] text-gray-100 text-sm rounded-lg block w-full p-2.5'
                     id='subject' 
                     required 
@@ -67,6 +106,13 @@ export const EmailSection = () => {
                 <button className="bg-[#54bbc2] hover:bg-[#419197] text-white font-medium py-2.5 rounded-lg w-full">
                     Send Message
                 </button>
+                {
+                    emailSubmitted && (
+                        <p className='text-green-500 text-sm mt-2'>
+                            Email sent successfully!
+                        </p>
+                    )
+                }
             </form>
         </div>
     </section>
