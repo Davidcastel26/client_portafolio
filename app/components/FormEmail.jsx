@@ -3,7 +3,7 @@ import { useState } from 'react'
 export const FormEmail = () => {
 
     const [emailSubmitted, setEmailSubmitted] = useState(false)
-
+/*
     const handleSubmit = async (event) => {
 
         event.preventDefault();
@@ -36,10 +36,11 @@ export const FormEmail = () => {
         }
     }
 
-
+*/
   return (
     <div className="">
-        <form action="" className='flex flex-col' onSubmit={handleSubmit}>
+        {/* <form action="" className='flex flex-col' onSubmit={handleSubmit}> */}
+        <form action="" className='flex flex-col' onSubmit={() => setEmailSubmitted(!emailSubmitted) }>
             <div className="mb-6">
             <label htmlFor="email" type='email' className='text-white block mb-2 text-sm font-medium'>
                 Your email
