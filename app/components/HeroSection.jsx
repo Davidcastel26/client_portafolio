@@ -36,20 +36,20 @@ export const HeroSection = () => {
                     Hire Me 
                 </button>
                 <button className="btn px-1 py-1 w-full sm:w-fit rounded-full bg-gradient-to-br from-[#419197] via-[#78D6C6] to-[#F5FCCD] hover:bg-slate-500 mt-3"> 
-                   <span className="block bg-[#040404] hover:bg-slate-800 rounded-full px-5 py-2">
+                   {/* <span className="block bg-[#040404] hover:bg-slate-800 rounded-full px-5 py-2">
                     Download CV 
-                   </span>
+                   </span> */}
                 </button>
             </div>
         </div>
         <div className="col-span-5 place-self-center mt-4 lg:mt-0">
             <div className="rounded-full bg-[#181818] w-[400px] h-[400px] relative">
                 <Image 
-                    src='/images/hero5.jpeg'
+                    src='/images/hero3.png'
                     alt="hero image"
                     className="absolute transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
-                    width={300}
-                    height={300}
+                    width={400}
+                    height={400}
                 />
             </div>
         </div>
