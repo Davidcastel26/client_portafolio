@@ -41,7 +41,7 @@ export const projectsInfo = [
         id: 1,
         title: 'backroad proyect cst',
         description: 'This proyect is made with react js',
-        image:"/images/projects/1.png",
+        image:"/images/projects/1.jpg",
         tag: ["All", "WEB","React"],
         link:'https://backroad-apps.netlify.app',
         codeLink: 'https://github.com/Davidcastel26/Backroads-Project'
@@ -50,7 +50,7 @@ export const projectsInfo = [
         id: 2,
         title: 'our menu react cst',
         description: 'This proyect is made with react js',
-        image:"/images/projects/2.png",
+        image:"/images/projects/2.jpg",
         tag: ["All", "WEB","React"],
         link:'https://our-menu-react-dc.netlify.app/',
         codeLink:'https://github.com/Davidcastel26/our-menu-react'
@@ -59,7 +59,7 @@ export const projectsInfo = [
         id: 3,
         title: 'Slider starter cst',
         description: 'This proyect is made with react js',
-        image:"/images/projects/3.png",
+        image:"/images/projects/3.jpg",
         tag: ["All", "WEB","NextJs"],
         link:'https://slider-starter-cast.netlify.app/',
         codeLink:'https://github.com/Davidcastel26/slider-starter-react'

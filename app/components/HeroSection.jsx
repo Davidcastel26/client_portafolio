@@ -47,8 +47,8 @@ export const HeroSection = () => {
                 <Image 
                     src='/images/hero3.png'
                     alt="hero image"
-                    className="absolute transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
-                    width={400}
+                    className="absolute transform -translate-x-1/2 -translate-y-1/3 top-1/4 left-1/2"
+                    width={300}
                     height={400}
                 />
             </div>

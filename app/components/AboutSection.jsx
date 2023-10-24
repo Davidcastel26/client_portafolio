@@ -23,7 +23,7 @@ export const AboutSection = () => {
             className="md:grid md:grid-cols-2 gap-8 items-center py-8 px-4 xl:gap-16 sm:py-16 xl:px-16"
         >
             <Image
-             src="/images/about.jpeg"
+             src="/images/about.jpg"
              width={500}
              height={400}
              alt='img'
